@@ -1,15 +1,17 @@
 import user from "../data/user"
 const links = user.links
 
-function Links (props){
+function Links ({github , linkedin}){
     return (
-        <div>
+        <>
         <h3>Links</h3>
-        
-        <a href = "https://github.com/liza">{props.github}</a>
-        <a href = "https://www.linkedin.com/in/liza/">{props.linkedin}</a>
-
+        <div>
+        <a href = "https://github.com/liza">{github}</a>
+        <a href = "https://www.linkedin.com/in/liza/">{linkedin}</a>
         </div>
+        
+        </>
+        
     )
 }
 
